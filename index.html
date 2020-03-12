@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Le fameux link du font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Le Shop !</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="monmenu"></div>
+      <nav>
+        <h2>☺ Accueil ☺</h2>
+        <ul class="shop">
+          <li>
+            <a href="index.html"
+              ><ion-icon name="home-outline"></ion-icon>Accueil</a
+            >
+          </li>
+          <li>
+            <a href="about.html"
+              ><ion-icon name="book-outline"></ion-icon>À Propos De</a
+            >
+          </li>
+          <li>
+            <a href="shop.html">
+              <ion-icon name="cart-outline"></ion-icon>Panier :
+              <!-- Le fameux span -->
+              <span>0</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="image">
+        <img src="image/ane.jpg" alt="animal1" />
+        <h3>Stéphane L'Âne</h3>
+        <h3>15€</h3>
+        <a class="add-cart cart1" href="#">Ajouter animal</a>
+      </div>
+
+      <div class="image">
+        <img src="image/cheval.jpg" alt="animal2" />
+        <h3>Perceval Le Cheval</h3>
+        <h3>15€</h3>
+        <a class="add-cart cart2" href="#">Ajouter animal</a>
+      </div>
+
+      <div class="image">
+        <img src="image/quokka.jpg" alt="animal3" />
+        <h3>Thomas Le Quokka</h3>
+        <h3>20€</h3>
+        <a class="add-cart cart3" href="#">Ajouter animal</a>
+      </div>
+
+      <div class="image">
+        <img src="image/macaque.jpg" alt="animal4" />
+        <h3>Jacques Le Macaque</h3>
+        <h3>25€</h3>
+        <a class="add-cart cart4" href="#">Ajouter animal</a>
+      </div>
+    </div>
+    <!-- Le script de notre ion icon -->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

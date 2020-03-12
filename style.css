@@ -1,0 +1,267 @@
+/*
+
+Sources
+
+https://html-css-js.com/css/generator/
+https://css3generator.com/
+https://www.cssmatic.com/
+https://css-tricks.com/
+https://bearcss.com/
+https://css3gen.com/
+
+*/
+
+* {
+  /* Link du font sur l'index*/
+  font-family: "Indie Flower", cursive;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===========> Page index.html <=========== */
+/* Modification du header sur Gimp */
+
+header {
+  background: url("image/Darwin.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  position: relative;
+}
+
+/* Ce dégradé de qualité... */
+/* J'oublie l'idée d'adapter du dégradé du body to header ... */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url("image/Savane.jpg") no-repeat center fixed;
+  background-size: cover;
+  /* background-color: rgba(105, 86, 68, 0.897);
+  background: linear-gradient(
+    0deg,
+    black,
+    brown,
+    rgba(255, 166, 0, 0.658),
+    rgb(189, 167, 142)
+  ); */
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 60px 0 50px;
+}
+
+h2 {
+  color: rgba(66, 39, 15, 0.938);
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+nav li span {
+  padding-left: 5px;
+}
+
+li a {
+  padding: 5px;
+  background-color: rgba(165, 50, 50, 0.842);
+  text-decoration: none;
+  box-shadow: 3px -3px 10px 1px rgba(39, 39, 39, 0.97);
+  border-radius: 30px 30px 30px 30px;
+  -moz-border-radius: 30px 30px 30px 30px;
+  -webkit-border-radius: 30px 30px 30px 30px;
+  border: 1px solid #000000;
+  font-weight: bold;
+  font-size: 15px;
+  /* box-shadow: 3px 3px rgb(150, 149, 149), 1em 0 3em rgb(20, 20, 16); */
+}
+
+h3 {
+  text-align: center;
+}
+
+/* Mon ul .shop */
+
+.shop ion-icon {
+  vertical-align: bottom;
+  font-size: 20px;
+  padding-right: 5px;
+  padding-bottom: 4px;
+}
+
+.shop a {
+  background-color: rgba(105, 86, 68, 0.897);
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Mon container */
+
+.container,
+.articles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Image<Container */
+
+.image {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 3px -3px 10px 1px rgba(39, 39, 39, 0.97);
+  background-color: peru;
+  border-radius: 30px 30px 30px 30px;
+  -moz-border-radius: 30px 30px 30px 30px;
+  -webkit-border-radius: 30px 30px 30px 30px;
+  border: 2px solid rgba(169, 172, 27, 0.63);
+}
+
+/* add-cart */
+
+.add-cart {
+  position: absolute;
+  width: 100%;
+  background-color: rgb(255, 136, 0);
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Image Hover */
+
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4 {
+  bottom: 75px;
+  opacity: 0.8;
+  padding: 10px;
+  text-decoration: rgb(114, 102, 92);
+}
+
+.image:hover a {
+  color: rgb(7, 7, 7);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* ===========> Page about.html <=========== */
+
+/* La ferme des animaux */
+
+.video {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  position: relative;
+  
+}
+
+/* ===========> Page shop.html <=========== */
+
+.shop-container {
+  max-width: 650px;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.shop-container ion-icon {
+  font-size: 25px;
+  color: saddlebrown;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.shop-header {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 4px solid rgba(105, 86, 68, 0.897);
+  margin: 0 auto;
+}
+
+.nom-article {
+  width: 45%;
+}
+
+.prix {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(66, 39, 15, 0.938);
+}
+
+.qte {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(66, 39, 15, 0.938);
+}
+
+.total {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(66, 39, 15, 0.938);
+}
+
+/* Les éléments de mon panier */
+
+.articles {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid rgba(66, 39, 15, 0.938);
+}
+
+.articles ion-icon {
+  cursor: pointer;
+}
+
+.articles img {
+  width: 50px;
+  box-shadow: 3px -3px 10px 1px rgba(39, 39, 39, 0.97);
+}
+
+.containerDeMonPanier {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.titreTotalPanier {
+  width: 30%;
+}
+
+.totalPanier {
+  width: 10%;
+}
